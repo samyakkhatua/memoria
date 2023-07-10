@@ -1,10 +1,16 @@
 import Link from "next/link";
+import { getServerSession  } from "next-auth";
+import { authOptions } from "./api/auth/[...nextauth]/route";
 
-export default function Home() {
+export default async function Home() {
+  const session = await getServerSession(authOptions)
+
   return (
     <>
     <h1>Memoria</h1>
     <Link href="/signin">Signin</Link>
+
+    <br></br>
     </>
   )
 }
