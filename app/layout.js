@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Memoria',
-  description: 'Share Photos Albums Seemlessly!!!',
+  description: 'Share Photo Albums Seemlessly!!!',
 }
 
 export default function RootLayout({ children }) {
