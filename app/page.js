@@ -11,6 +11,9 @@ export default async function Home() {
     <Link href="/signin">Signin</Link>
 
     <br></br>
+
+    <p>Server Side rendered</p>
+    <pre>{JSON.stringify(session)}</pre>
     </>
   )
 }
