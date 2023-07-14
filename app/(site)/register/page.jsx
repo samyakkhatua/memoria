@@ -11,6 +11,9 @@ export default function Register() {
   })
   const registerUser = async (e) => {
     e.preventDefault()
+    axios.post('api/register', data)
+    .then(() => alert('User has been register'))
+    .catch(() => alert('An error occurred!'))
   }
   return (
     <>
