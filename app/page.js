@@ -15,6 +15,8 @@ export default async function Home() {
 
       <h1>Server Side Rendered</h1>
       <pre>{JSON.stringify(session)}</pre>
+
+      {/* Slow */}
       <h1>Client Side Rendered</h1>
       <User />
     </>
